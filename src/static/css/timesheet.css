@@ -1,0 +1,24 @@
+html {
+    padding-bottom: 25px;
+}
+
+.table .header {
+  text-align: center;
+  min-width: 200px;
+  table-layout: fixed;
+}
+.table td {
+    min-width: 30px;
+}
+.table-responsive>.fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+}
+
+@media(min-width:768px) {
+    .table-responsive>.fixed-column {
+        display: none;
+    }
+}

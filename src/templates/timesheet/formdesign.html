@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block customcss %}
+
+    <link rel="stylesheet" href="{% static 'css/timesheet.css' %}"/>
+
+    <style>
+        .form-control{
+            margin-bottom: 0;
+        }
+        .table td{
+            min-width: 54px;
+        }
+        .table-form{
+            height: auto;
+            padding: 0 6px;
+            border: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none;
+        }
+        .table-form:after,
+        .table-form:before{
+            display:none;
+        }
+    </style>
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+
+        <ul class="nav nav-pills nav-justified">
+            <li><a>Previous</a></li>
+            <li>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>2014 January</option>
+                        <option>2014 Febuary</option>
+                        <option>2014 March</option>
+                        <option>2014 April</option>
+                        <option>2014 May</option>
+                        <option>2014 June</option>
+                        <option>2014 July</option>
+                        <option>2014 August</option>
+                        <option>2014 September</option>
+                        <option>2014 October</option>
+                        <option>2014 November</option>
+                        <option>2014 December</option>
+                        <option>2015 January</option>
+                    </select>
+                </div>
+            </li>
+            <li><a>Next</a></li>
+        </ul>
+
+        <div class="col-md-6">
+
+
+        </div>
+    </div>
+
+    <h1 class="page-header">2014 January Timesheet
+        <button class="btn btn-primary pull-right"><i class="fa fa-lg fa-floppy-o"></i> Save</button>
+    </h1>
+
+    <div class="col-md-12 table-responsive">
+        <table class="table table-bordered table-condensed">
+            <thead>
+            <tr class="header">
+                <th> Client / Dept</th>
+                <th> Activity</th>
+                <th> Notes</th>
+                <th>01</th>
+                <th>02</th>
+                <th>03</th>
+                <th>04</th>
+                <th>05</th>
+                <th>06</th>
+                <th>07</th>
+                <th>08</th>
+                <th>09</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+                <th>19</th>
+                <th>20</th>
+                <th>21</th>
+                <th>22</th>
+                <th>23</th>
+                <th>24</th>
+                <th>25</th>
+                <th>26</th>
+                <th>27</th>
+                <th>28</th>
+                <th>29</th>
+                <th>30</th>
+                <th>31</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th class="header">
+                    <select class="form-control table-form">
+                        <option>103 - Business Change</option>
+                        <option>1 - Phones r Us</option>
+                        </select>
+                </th>
+                <th class="header">
+                    <select class="form-control table-form">
+                        <option>Business Change</option>
+                        <option>Managed Delivery</option>
+                    </select>
+                </th>
+                <th class="header">
+                    <input type="text" class="form-control table-form" id="notes">
+                </th>
+                <td>
+                    <input type="text" class="form-control table-form" id="01">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="02">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="03">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+                <td>
+                    <input type="text" class="form-control table-form" id="">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-default"><i class="fa fa-plus"></i> Add Row </a>
+    </div>
+
+{% endblock %}
+
+{% block customjs %}
+
+    <script>
+    $(document).ready(function() {
+        var $table = $('.table');
+        //Make a clone of our table
+        var $fixedColumn = $table.clone().insertBefore($table).addClass('fixed-column');
+
+        //Remove everything except for first column
+        $fixedColumn.find('th:nth-child(n+4),td:nth-child(n+4)').remove();
+
+        //Match the height of the rows to that of the original table's
+        $fixedColumn.find('tr').each(function (i, elem) {
+            $(this).height($table.find('tr:eq(' + i + ')').height());
+        });
+    });
+    </script>
+
+    <script src="{% static 'js/timesheet.js' %}"></script>
+
+
+{% endblock %}

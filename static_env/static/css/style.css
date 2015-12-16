@@ -1,0 +1,11 @@
+.container-fluid{
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+}
+
+@media(max-width:768px) {
+    .container-fluid{
+        padding: 0 !important;
+    }
+
+}
