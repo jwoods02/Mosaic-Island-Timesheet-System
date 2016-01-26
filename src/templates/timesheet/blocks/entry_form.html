@@ -1,0 +1,10 @@
+{% load crispy_forms_tags %}
+                    {{ entry_form|crispy }}
+                    <div id="div_id_submit" class="form-group">
+                        <label class="control-label submit-label"> Save
+                        </label>
+                        <div class="controls ">
+                            <button class="btn btn-primary" id="entry_submit" type="submit" value="Submit" name="entry_submit" ><i class="fa fa-floppy-o"></i> Save</button>
+                            <button class="btn btn-danger" id="entry_delete" value="Delete" name="entry_delete" ><i class="fa fa-times"></i> Delete</button>
+                            </div>
+                    </div>

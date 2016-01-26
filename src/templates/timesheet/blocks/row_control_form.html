@@ -1,0 +1,10 @@
+{% load crispy_forms_tags %}
+                {{ row_control_form|crispy }}
+                    <div id="div_id_submit" class="form-group">
+                        <label class="control-label submit-label"> Save
+                        </label>
+                        <div class="controls ">
+                            <button class="btn btn-primary" id="row_control_submit" type="submit" value="Submit" name="row_control_submit"><i class="fa fa-floppy-o"></i> Save</button>
+                            <button class="btn btn-danger" id="row_control_delete" value="Delete" name="row_control_delete" ><i class="fa fa-times"></i> Delete</button>
+                        </div>
+                    </div>

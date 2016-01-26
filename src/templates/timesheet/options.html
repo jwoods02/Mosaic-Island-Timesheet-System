@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block customcss %}
+
+    <style>
+
+    h3 {
+        margin-top: 0;
+    }
+
+    </style>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2>Most used features:</h2>
+            </div>
+
+            <div class="col-md-6">
+                <div class="well">
+
+                    <h3>Open Month's Timesheets</h3>
+
+
+                    <p>Add timesheets for all active employees for a given year and month (if they don't already exist).</p>
+
+                    <form id="open_timesheets_form" method="POST" action="{{ request.path }}">
+
+                        {% csrf_token %}
+
+                        <input type="hidden" name="open_timesheets" value="open_timesheets" />
+
+                        <div class="form-group">
+                            <label for="year_input">Year</label>
+                            <input class="numberinput form-control" id="open_ts_year_input" name="year" step="1" type="number" placeholder="yyyy"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="month_input">Month</label>
+                            <input class="numberinput form-control" id="open_ts_month_input" name="month" step="1" type="number" placeholder="mm" />
+                        </div>
+
+                        <button type="button" id="open_timesheets_submit" class="btn btn-default btn-block">Submit</button>
+
+                    </form>
+
+                    <div class="text-info" id="open_timesheets_message"></div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="well">
+
+                    <h3>Month Summary</h3>
+
+                    <p>View a breakdown of summary data for employees, departments and activities a given year and month. Also shows who has submitted their timesheets.</p>
+                    <form id="year_month_form">
+
+                        <div class="form-group">
+                            <label for="year_input">Year</label>
+                            <input class="numberinput form-control" id="ym_year_input" name="year" step="1" type="number" placeholder="yyyy"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="month_input">Month</label>
+                            <input class="numberinput form-control" id="ym_month_input" name="month" step="1" type="number" placeholder="mm" />
+                        </div>
+
+                        <button type="submit" id="year_month_submit" class="btn btn-default btn-block">Go</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <h2>Other view options:</h2>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">
+
+                    <h3>Employee</h3>
+
+                    <p>View a breakdown for any of the <span class="badge">{{ employee_no }}</span> employees.</p>
+
+                    <select class="form-control" onchange="if (this.value) window.location.href=this.value">
+                        {% for i in employee_list %}
+                                <option value="{{ i.0 }}">{{ i.1 }}</option>
+                        {% endfor %}
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">
+
+                    <h3>Department</h3>
+
+                    <p>View a breakdown of all <span class="badge">{{ dept_no }}</span> departments.</p>
+
+                    <button type="button" id="department_go" class="btn btn-default btn-block">Go</button>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="well">
+
+                    <h3>Activity</h3>
+
+                    <p>View a breakdown of all <span class="badge">{{ act_no }}</span> activities.</p>
+
+                    <button type="button" id="activity_go" class="btn btn-default btn-block">Go</button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <hr>
+
+                <h4>Statistics: </h4>
+
+                <p>
+                    In the database there are <span class="badge">{{ entry_no }}</span> entries
+                    within <span class="badge">{{ row_control_no }}</span> rows
+                    in <span class="badge">{{ month_control_no }}</span> timesheets.
+                </p>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block customjs %}
+
+    <script src="{% static 'js/ajax_csrf.js' %}"></script>
+
+    <script>
+
+        $( "#year_month_form" ).submit(function( event ) {
+
+            event.preventDefault();
+
+            var year = $('#ym_year_input').val();
+
+            var month = $('#ym_month_input').val();
+
+            window.location = '/summary/' + year + "/" + month + "/";
+        });
+
+        $("#department_go").click(function() {
+
+            window.location = '/summary/' + 'departments';
+        });
+
+        $("#activity_go").click(function() {
+
+            window.location = '/summary/' + 'activities';
+        });
+
+
+        var frm1 = $('#open_timesheets_form');
+
+
+        $(frm1).on("click", "#open_timesheets_submit", function () {
+
+            var open_timesheet_confirm = window.confirm("WARNING. \n" +
+                    "This will create timesheets for all active users for your given year and month. Create individual timesheets in the admin panel. \n" +
+                    "Please make sure this action has been authorised as deleting timesheets is never recommended and can only be done manually in the admin. \n" +
+                    "Are you sure you want to open this month?");
+
+
+            if (open_timesheet_confirm == true) {
+
+                console.log("Open timesheet form submitted.");
+
+                $.ajax({
+                    type: "POST",
+                    url: frm1.attr('action'),
+                    data: frm1.serialize(),
+                    success: function (data) {
+
+                        console.log(data);
+
+                        $('#open_timesheets_message').html(data);
+
+                    },
+                    error: function (data) {
+                        console.log("Something went wrong!");
+                    }
+                });
+                return false;
+
+            } else {
+                console.log("Open timesheet action aborted.")
+            }
+
+        });
+
+
+    </script>
+
+{% endblock %}

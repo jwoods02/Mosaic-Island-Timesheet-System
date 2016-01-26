@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import *
-from .forms import RowControlForm
+from .forms import RowControlForm, EntryForm
 
 
 class EmployeeAdmin(admin.ModelAdmin):
@@ -49,9 +49,7 @@ admin.site.register(RowControl, RowControlAdmin)
 
 class EntryAdmin(admin.ModelAdmin):
     list_display = ['__str__', 'row_control', 'date', 'hours']
-
-    class Meta:
-        model = Entry
+    form = EntryForm
 
 admin.site.register(Entry, EntryAdmin)
 

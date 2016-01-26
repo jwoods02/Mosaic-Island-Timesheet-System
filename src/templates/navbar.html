@@ -7,18 +7,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{% url 'index' %}">Mosaic Island Timesheet System</a>
+      <a class="navbar-brand" href="{% url 'index' %}"> MITS - Mosaic Island Timesheet System</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
+          {% if request.user.is_staff %}
+              <li><a href="{% url 'options' %}">Options</a></li>
+              <li><a href="{% url 'admin:index' %}">Admin</a></li>
+          {% endif %}
         {% if request.user.is_authenticated %}
           <li><p class="navbar-text">Logged in as {{ request.user.username }} </p></li>
           <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog fa-lg"></i></a>
               <ul class="dropdown-menu" aria-labelledby="dLabel">
-              {% if request.user.is_staff %}
-                  <li><a href="{% url 'admin:index' %}">Admin</a></li>
-              {% endif %}
                   <li><a href="{% url 'auth_password_change' %}?next=/">Change Password</a></li>
                   <li><a href="{% url 'auth_logout' %}?next=/">Log Out</a></li>
               </ul>

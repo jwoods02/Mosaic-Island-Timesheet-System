@@ -100,10 +100,10 @@ class NewComplexModelTests(TestCase):
         theDate = '2015-12-25'
         mcr = MonthControlRecord(employee=employee, first_day_of_month=theDate)
         fullsave(mcr)
-        mcrYearMonth = mcr.get_year_month
+        mcrYearMonth = mcr.get_year_month_url
         self.assertEqual(mcr.employee, employee)
         self.assertEqual(mcr.first_day_of_month, datetime.date(2015, 12, 25))
-        self.assertEqual(mcrYearMonth, "2015/12")
+        self.assertEqual(mcrYearMonth, "/2015/12/")
 
     def test_new_row_control(self):
         """

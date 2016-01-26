@@ -1,0 +1,8 @@
+
+            {% for record in table_data %}
+                <tr>
+                {% for field in record %}
+                    <td onclick="index(this)">{{ field }}</td>
+                {% endfor %}
+                </tr>
+            {% endfor %}

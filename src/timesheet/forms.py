@@ -1,35 +1,12 @@
 from django import forms
 
-from django.core.exceptions import ValidationError
-
-from .models import RowControl, Entry
+from .models import RowControl, Entry, Department, Activity
 
 
 class RowControlForm(forms.ModelForm):
     class Meta:
         model = RowControl
         fields = ['month_control_record', 'department', 'activity', 'notes']
-
-    def clean(self):
-        cleaned_data = self.cleaned_data
-
-        # Ensures row is unique
-        try:
-            RowControl.objects.get(month_control_record=cleaned_data['month_control_record'],
-                                   department=cleaned_data['department'],
-                                   activity=cleaned_data['activity'],
-                                   notes=cleaned_data['notes'])
-
-        except RowControl.DoesNotExist:
-            pass
-
-        else:
-            raise ValidationError('This row already exists')
-
-        print("ERRORS:", self.errors)
-
-        # Always return cleaned data
-        return cleaned_data
 
 
 class EntryForm(forms.ModelForm):
@@ -40,16 +17,21 @@ class EntryForm(forms.ModelForm):
     def clean(self):
         cleaned_data = self.cleaned_data
 
-        # Ensures data is unique (only 1 hours entry for each date and row_control)
-        try:
-            Entry.objects.get(row_control=cleaned_data['row_control'],
-                              date=cleaned_data['date'])
+        row_control = cleaned_data['row_control']
 
-        except Entry.DoesNotExist:
-            pass
+        date = cleaned_data['date']
 
-        else:
-            raise ValidationError('An entry for this date already exists')
+        hours = cleaned_data['hours']
+
+        if not self.instance:
+            if Entry.objects.get(row_control=row_control, date=date):
+                raise forms.ValidationError("Entry for this day and row already exists.")
+
+        if hours > 24:
+            raise forms.ValidationError("Cannot work more than 24 hours in a day.")
+
+        if hours <= 0:
+            raise forms.ValidationError("Hours field must be more than 0.")
 
         # Always return cleaned data
         return cleaned_data
