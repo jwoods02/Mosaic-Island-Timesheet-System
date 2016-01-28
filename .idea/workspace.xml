@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63c0d234-a0cd-4400-a209-f51ce59794c2" name="Default" comment="Major changes. Almost complete">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/summary.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_activities.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_departments.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_employees.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_month.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
+    <list default="true" id="63c0d234-a0cd-4400-a209-f51ce59794c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/pip-7.1.2.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/pip-7.1.2.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/setuptools-18.2.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/setuptools-18.2.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/wheel-0.24.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/wheel-0.24.0.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/timesheet/options.html" afterPath="$PROJECT_DIR$/src/templates/timesheet/options.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/urls.py" afterPath="$PROJECT_DIR$/src/timesheet/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/views.py" afterPath="$PROJECT_DIR$/src/timesheet/views.py" />
     </list>
     <ignored path="MITS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -549,7 +536,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453769054125</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First complete draft">
+      <created>1453974433308</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1453974433308</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -558,6 +551,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23581135" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -567,7 +561,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -590,7 +583,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Major changes. Almost complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Major changes. Almost complete" />
+    <MESSAGE value="First complete draft" />
+    <option name="LAST_COMMIT_MESSAGE" value="First complete draft" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
