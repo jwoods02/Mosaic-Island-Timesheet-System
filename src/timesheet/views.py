@@ -1,6 +1,7 @@
 import calendar
 import datetime
 import json
+import decimal
 from django import forms
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
@@ -144,7 +145,7 @@ def get_month_name(monthcode):
     return monthname
 
 
-def get_month_control_record_list(employee, currentyear, currentmonth):
+def get_month_control_record_list_current_year_selected(employee, currentyear, currentmonth):
     """
     Returns list of all month control records for user, with current year selected.
     """
@@ -197,7 +198,7 @@ def index(request):
     employee = Employee.objects.get(user=request.user)
 
     # Get the latest month active for employee
-    latest_mcr = MonthControlRecord.objects.filter(employee=employee).order_by('-first_day_of_month')[0]
+    latest_mcr = MonthControlRecord.objects.filter(employee=employee).latest('first_day_of_month')
 
     print("index list: ", latest_mcr)
 
@@ -249,7 +250,7 @@ def month_view(request, year, month):
     table_data = getTableData(month_control_record, year, month)
 
     # Get list of all month control records for user with the current one selected for easy navigation
-    year_month_list = get_month_control_record_list(employee, year, month)
+    year_month_list = get_month_control_record_list_current_year_selected(employee, year, month)
 
     # If user has submitted a form
     if request.is_ajax() and request.method == "POST":
@@ -422,6 +423,14 @@ def month_view(request, year, month):
 ##################
 
 
+# http://stackoverflow.com/questions/1960516/python-json-serialize-a-decimal-object
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, decimal.Decimal):
+            return float(o)
+        return super(DecimalEncoder, self).default(o)
+
+
 def get_employee_list():
     """
     Returns list of all employees numbers and usernames.
@@ -441,6 +450,96 @@ def get_employee_list():
     print(employee_list)
 
     return employee_list
+
+
+def get_month_control_record_formatted_list_from_list(mcr_list):
+    """
+    Returns list of all month control records formatted for html select object from list
+    """
+    # Initialise 2d list to store data for list
+    year_month_list = []
+
+    # Dictionary to convert mcr status codes to text
+    status = {
+        0: "Open",
+        1: "Locked",
+        2: "Closed"
+    }
+
+    # For 0 to number of open mcr's
+    for i in range(len(mcr_list)):
+        # Append new blank list for each mcr
+        year_month_list.append([])
+
+        # Append primary ket into the list for the timesheet
+        year_month_list[i].append(mcr_list[i].pk)
+
+        # Get username for given timesheet
+        mcr_username = mcr_list[i].employee.user.username
+
+        # Get status of timesheet
+        mcr_status = status[mcr_list[i].status]
+
+        # Append username and status to use as label for menu
+        year_month_list[i].append(mcr_status + ": " + mcr_username)
+
+    return year_month_list
+
+
+def get_open_timesheets(mcr_list):
+    """
+    Returns al open timesheets from list as a list of employees
+    """
+    open_names = []
+
+    for mcr in mcr_list:
+        if mcr.status == 0:
+            mcr_user = str(mcr.employee.user.username)
+            open_names.append(mcr_user)
+
+    return open_names
+
+
+def get_closed_timesheets(mcr_list):
+    """
+    Returns al closed timesheets from list as a list of employees
+    """
+    closed_names = []
+
+    for mcr in mcr_list:
+        if mcr.status == 1 or mcr.status == 2:
+            mcr_user = str(mcr.employee.user.username)
+            closed_names.append(mcr_user)
+
+    return closed_names
+
+
+def join_open_and_closed_timesheets(open_timesheets, completed_timesheets):
+    """
+     Returns a 2d list of 2 lists.
+    """
+    timesheets_len = len(open_timesheets)
+
+    if len(completed_timesheets) > timesheets_len:
+        timesheets_len = len(completed_timesheets)
+
+    joint_timesheets = []
+
+    for i in range(timesheets_len):
+        try:
+            open_timesheets_entry = open_timesheets[i]
+        except:
+            open_timesheets_entry = ""
+
+        try:
+            completed_timesheets_entry = completed_timesheets[i]
+        except:
+            completed_timesheets_entry = ""
+
+        joint_timesheets.append([open_timesheets_entry, completed_timesheets_entry])
+
+    return joint_timesheets
+
 
 
 @login_required
@@ -515,28 +614,86 @@ def options(request):
 @login_required
 def summary_month(request, year, month):
 
-    year = str(year)
+    month = int(month)
+    year = int(year)
 
-    month = str(month)
+    monthname = get_month_name(month)
 
-    return HttpResponse("SUMMARY MONTH " + year + " " + month)
+    title = "Summary "+ str(monthname) + " " + str(year)
 
+    start_date = datetime.date(year, month, 1)
 
-@login_required
-def summary_activities(request):
+    if request.is_ajax() and ('lock_check' in str(request.GET)):
+        all_mcrs = MonthControlRecord.objects.filter(first_day_of_month=start_date, status=2)
+    else:
+        all_mcrs = MonthControlRecord.objects.filter(first_day_of_month=start_date)
 
-    return HttpResponse("SUMMARY ACTIVITIES")
+    if request.is_ajax() and 'the_timesheet' in request.GET:
 
+        the_mcr = MonthControlRecord.objects.get(pk=request.GET['the_timesheet'])
 
-@login_required
-def summary_departments(request):
+        table_data = getTableData(the_mcr, year, month)
 
-    return HttpResponse("SUMMARY DEPARTMENTS")
+        return render(request, "timesheet/blocks/tablesnippet.html", {'table_data': table_data})
 
+    department_totals = {}
 
-@login_required
-def summary_employees(request, employee):
+    activity_totals = {}
 
-    employee = str(employee)
+    for mcr in all_mcrs:
 
-    return HttpResponse("SUMMARY EMPLOYEES" + " " + employee)
+        for row in RowControl.objects.filter(month_control_record=mcr):
+
+            if row.department.name not in department_totals:
+                department_totals[row.department.name] = 0
+
+            if row.activity.name not in activity_totals:
+                activity_totals[row.activity.name] = 0
+
+            for entry in Entry.objects.filter(row_control=row):
+                department_totals[row.department.name] += entry.hours
+                activity_totals[row.activity.name] += entry.hours
+
+    department_totals_json = json.dumps(department_totals, cls=DecimalEncoder)
+
+    activity_totals_json = json.dumps(activity_totals, cls=DecimalEncoder)
+
+    timesheets_open = get_open_timesheets(all_mcrs)
+
+    timesheets_completed = get_closed_timesheets(all_mcrs)
+
+    timesheets_status = join_open_and_closed_timesheets(timesheets_open, timesheets_completed)
+
+    timesheets_open_no = len(timesheets_open)
+
+    timesheets_completed_no = len(timesheets_completed)
+
+    individual_mcr_list = get_month_control_record_formatted_list_from_list(all_mcrs)
+
+    table_header = getDaysInYearMonthList(year, month)
+
+    if len(all_mcrs) > 0:
+        the_mcr = all_mcrs[0]
+
+        table_data = getTableData(the_mcr, year, month)
+
+    else:
+        table_data = ""
+
+    context = {
+        'title': title,
+        'monthname': monthname,
+        'year': year,
+        'dept_totals': department_totals,
+        'activity_totals': activity_totals,
+        'dept_totals_json': department_totals_json,
+        'activity_totals_json': activity_totals_json,
+        'mcr_list': individual_mcr_list,
+        'table_header': table_header,
+        'table_data': table_data,
+        'timesheets_open_no': timesheets_open_no,
+        'timesheets_completed_no': timesheets_completed_no,
+        'timesheet_status': timesheets_status,
+    }
+
+    return render(request, "timesheet/summary.html", context)

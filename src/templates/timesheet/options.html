@@ -6,8 +6,8 @@
 
     <style>
 
-    h3 {
-        margin-top: 0;
+    h2 {
+        margin-top: 5px;
     }
 
     </style>
@@ -19,15 +19,10 @@
 
         <div class="row">
 
-            <div class="col-md-12">
-                <h2>Most used features:</h2>
-            </div>
-
             <div class="col-md-6">
                 <div class="well">
 
-                    <h3>Open Month's Timesheets</h3>
-
+                    <h2>Open Month's Timesheets</h2>
 
                     <p>Add timesheets for all active employees for a given year and month (if they don't already exist).</p>
 
@@ -47,7 +42,7 @@
                             <input class="numberinput form-control" id="open_ts_month_input" name="month" step="1" type="number" placeholder="mm" />
                         </div>
 
-                        <button type="button" id="open_timesheets_submit" class="btn btn-default btn-block">Submit</button>
+                        <button type="button" id="open_timesheets_submit" class="btn btn-default btn-block">Open Timesheets</button>
 
                     </form>
 
@@ -59,7 +54,7 @@
             <div class="col-md-6">
                 <div class="well">
 
-                    <h3>Month Summary</h3>
+                    <h2>Month Summary</h2>
 
                     <p>View a breakdown of summary data for employees, departments and activities a given year and month. Also shows who has submitted their timesheets.</p>
                     <form id="year_month_form">
@@ -74,56 +69,8 @@
                             <input class="numberinput form-control" id="ym_month_input" name="month" step="1" type="number" placeholder="mm" />
                         </div>
 
-                        <button type="submit" id="year_month_submit" class="btn btn-default btn-block">Go</button>
+                        <button type="submit" id="year_month_submit" class="btn btn-default btn-block">View Month</button>
                     </form>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-12">
-                <h2>Other view options:</h2>
-            </div>
-
-            <div class="col-md-4">
-                <div class="well">
-
-                    <h3>Employee</h3>
-
-                    <p>View a breakdown for any of the <span class="badge">{{ employee_no }}</span> employees.</p>
-
-                    <select class="form-control" onchange="if (this.value) window.location.href=this.value">
-                        {% for i in employee_list %}
-                                <option value="{{ i.0 }}">{{ i.1 }}</option>
-                        {% endfor %}
-                    </select>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="well">
-
-                    <h3>Department</h3>
-
-                    <p>View a breakdown of all <span class="badge">{{ dept_no }}</span> departments.</p>
-
-                    <button type="button" id="department_go" class="btn btn-default btn-block">Go</button>
-
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="well">
-
-                    <h3>Activity</h3>
-
-                    <p>View a breakdown of all <span class="badge">{{ act_no }}</span> activities.</p>
-
-                    <button type="button" id="activity_go" class="btn btn-default btn-block">Go</button>
 
                 </div>
             </div>
@@ -136,13 +83,17 @@
 
                 <hr>
 
-                <h4>Statistics: </h4>
+                <h2>Statistics: </h2>
 
-                <p>
+                <p class="lead">
                     In the database there are <span class="badge">{{ entry_no }}</span> entries
+                    for <span class="badge">{{ dept_no }}</span> departments
+                    and <span class="badge">{{ act_no }}</span> activities
                     within <span class="badge">{{ row_control_no }}</span> rows
-                    in <span class="badge">{{ month_control_no }}</span> timesheets.
+                    in <span class="badge">{{ month_control_no }}</span> timesheets
+                    for <span class="badge">{{ employee_no }}</span> total employees.
                 </p>
+
                 <br>
             </div>
 
@@ -166,16 +117,6 @@
             var month = $('#ym_month_input').val();
 
             window.location = '/summary/' + year + "/" + month + "/";
-        });
-
-        $("#department_go").click(function() {
-
-            window.location = '/summary/' + 'departments';
-        });
-
-        $("#activity_go").click(function() {
-
-            window.location = '/summary/' + 'activities';
         });
 
 

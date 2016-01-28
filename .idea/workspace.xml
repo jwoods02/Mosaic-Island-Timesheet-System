@@ -1,199 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63c0d234-a0cd-4400-a209-f51ce59794c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/ajax_csrf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/blocks/entry_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/blocks/row_control_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/blocks/tablesnippet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/options.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/summary_activities.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/summary_departments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/summary_employees.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/summary_month.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/timesheet/signals.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/Django-1.9.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/test_form.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/cs/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/cs/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/eo/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/eo/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/fi/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/fi/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/id/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/id/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/kk/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/kk/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/pl/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/pl/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/uk/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/uk/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/fi/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/fi/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hu/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hu/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/id/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/id/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/fa/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/fa/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hu/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hu/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/id/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/id/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/uk/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/uk/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/contenttypes/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/contenttypes/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/id/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/id/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/humanize/locale/es_MX/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/humanize/locale/es_MX/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/id/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/id/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/da/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/da/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/es_MX/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/es_MX/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/hr/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/id/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/id/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/ko/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/ko/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/uk/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/uk/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/sites/locale/hr/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/sites/locale/hr/LC_MESSAGES/django.mo" />
+    <list default="true" id="63c0d234-a0cd-4400-a209-f51ce59794c2" name="Default" comment="Major changes. Almost complete">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/timesheet/summary.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_activities.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_departments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_employees.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/timesheet/summary_month.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/activate" afterPath="$PROJECT_DIR$/env/bin/activate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/activate.csh" afterPath="$PROJECT_DIR$/env/bin/activate.csh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/activate.fish" afterPath="$PROJECT_DIR$/env/bin/activate.fish" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/django-admin" afterPath="$PROJECT_DIR$/env/bin/django-admin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/django-admin.py" afterPath="$PROJECT_DIR$/env/bin/django-admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/easy_install" afterPath="$PROJECT_DIR$/env/bin/easy_install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/easy_install-3.5" afterPath="$PROJECT_DIR$/env/bin/easy_install-3.5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pip" afterPath="$PROJECT_DIR$/env/bin/pip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pip3" afterPath="$PROJECT_DIR$/env/bin/pip3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pip3.5" afterPath="$PROJECT_DIR$/env/bin/pip3.5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/wheel" afterPath="$PROJECT_DIR$/env/bin/wheel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/app_template/apps.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/app_template/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/cs/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/cs/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/eo/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/eo/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/fi/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/fi/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/id/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/id/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/kk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/kk/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/pl/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/pl/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/uk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/locale/uk/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/project_template/project_name/urls.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/conf/project_template/project_name/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/actions.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/actions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/helpers.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/helpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/fi/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/fi/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/hu/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/id/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/id/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/locale/uk/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/options.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/options.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/static/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/static/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/templates/admin/change_form.html" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/templates/admin/change_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/utils.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admin/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/admindocs/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/context_processors.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/context_processors.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/hashers.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/hashers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/fa/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/fa/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hu/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/hu/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/id/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/id/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/uk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/auth/locale/uk/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/contenttypes/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/contenttypes/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/id/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/id/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/flatpages/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/db/backends/postgis/models.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/db/backends/postgis/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/db/models/query.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/db/models/query.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/gdal/geomtype.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/gdal/geomtype.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/geos/prototypes/geom.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/geos/prototypes/geom.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/geos/prototypes/prepared.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/geos/prototypes/prepared.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/maps/google/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/maps/google/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/maps/google/overlays.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/maps/google/overlays.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/sitemaps/kml.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/gis/sitemaps/kml.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/humanize/locale/es_MX/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/humanize/locale/es_MX/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/fields/array.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/fields/array.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/id/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/id/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/postgres/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/da/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/da/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/es_MX/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/es_MX/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/id/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/id/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/ko/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/ko/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/uk/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/redirects/locale/uk/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/sites/locale/hr/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/contrib/sites/locale/hr/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/cache/backends/base.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/cache/backends/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/management/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/management/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/management/commands/inspectdb.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/management/commands/inspectdb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/management/commands/loaddata.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/core/management/commands/loaddata.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/backends/oracle/compiler.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/backends/oracle/compiler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/backends/postgresql/schema.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/backends/postgresql/schema.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/migrations/executor.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/migrations/executor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/migrations/operations/models.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/migrations/operations/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/migrations/operations/special.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/migrations/operations/special.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/base.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/expressions.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/expressions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/files.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/files.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/related.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/related.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/related_lookups.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/related_lookups.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/subclassing.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/fields/subclassing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/sql/query.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/sql/query.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/sql/subqueries.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/db/models/sql/subqueries.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/forms/fields.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/forms/fields.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/middleware/common.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/middleware/common.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/template/base.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/template/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/template/defaultfilters.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/template/defaultfilters.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/template/defaulttags.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/template/defaulttags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/test/runner.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/test/runner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/utils/translation/trans_real.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/utils/translation/trans_real.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/views/decorators/http.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/views/decorators/http.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/views/generic/detail.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/views/generic/detail.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/views/generic/edit.py" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/django/views/generic/edit.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/pip-7.1.2.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/pip-7.1.2.dist-info/RECORD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/setuptools-18.2.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/setuptools-18.2.dist-info/RECORD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/wheel-0.24.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python3.5/site-packages/wheel-0.24.0.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/pip-selfcheck.json" afterPath="$PROJECT_DIR$/env/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/js/timesheet.js" afterPath="$PROJECT_DIR$/src/static/js/timesheet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/navbar.html" afterPath="$PROJECT_DIR$/src/templates/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/__init__.py" afterPath="$PROJECT_DIR$/src/timesheet/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/admin.py" afterPath="$PROJECT_DIR$/src/timesheet/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/apps.py" afterPath="$PROJECT_DIR$/src/timesheet/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/forms.py" afterPath="$PROJECT_DIR$/src/timesheet/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/models.py" afterPath="$PROJECT_DIR$/src/timesheet/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/tests/test_forms.py" afterPath="$PROJECT_DIR$/src/timesheet/tests/test_forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/tests/test_models.py" afterPath="$PROJECT_DIR$/src/timesheet/tests/test_models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/timesheet/options.html" afterPath="$PROJECT_DIR$/src/templates/timesheet/options.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/urls.py" afterPath="$PROJECT_DIR$/src/timesheet/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/timesheet/views.py" afterPath="$PROJECT_DIR$/src/timesheet/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_env/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/static_env/static/admin/js/admin/DateTimeShortcuts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_env/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/static_env/static/admin/js/admin/RelatedObjectLookups.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_env/static/js/timesheet.js" afterPath="$PROJECT_DIR$/static_env/static/js/timesheet.js" />
     </list>
     <ignored path="MITS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -215,55 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/timesheet/__init__.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/timesheet/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+              <caret line="141" column="57" selection-start-line="141" selection-start-column="57" selection-end-line="141" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/timesheet/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/timesheet/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10769231">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/timesheet/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/timesheet/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="326" column="82" selection-start-line="326" selection-start-column="82" selection-end-line="326" selection-end-column="82" />
+            <state vertical-scroll-proportion="2.3384616">
+              <caret line="694" column="34" selection-start-line="694" selection-start-column="34" selection-end-line="694" selection-end-column="34" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -271,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="options.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/timesheet/options.html">
+      <file leaf-file-name="summary.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.25">
-              <caret line="189" column="62" selection-start-line="189" selection-start-column="62" selection-end-line="189" selection-end-column="62" />
+            <state vertical-scroll-proportion="-16.5">
+              <caret line="82" column="73" selection-start-line="82" selection-start-column="73" selection-end-line="82" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="summary_month.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary_month.html">
+      <file leaf-file-name="options.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/timesheet/options.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state vertical-scroll-proportion="45.375">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -324,24 +112,25 @@
         <option value="$PROJECT_DIR$/src/timesheet/admin.py" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/blocks/row_control_form.html" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/blocks/entry_form.html" />
-        <option value="$PROJECT_DIR$/src/templates/timesheet/summary_month.html" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/summary_activities.html" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/summary_employees.html" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/summary_departments.html" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/summary_home.html" />
-        <option value="$PROJECT_DIR$/src/timesheet/urls.py" />
         <option value="$PROJECT_DIR$/src/static/js/ajax_csrf.js" />
-        <option value="$PROJECT_DIR$/src/templates/base.html" />
         <option value="$PROJECT_DIR$/src/templates/navbar.html" />
-        <option value="$PROJECT_DIR$/src/templates/timesheet/monthview.html" />
         <option value="$PROJECT_DIR$/src/timesheet/forms.py" />
         <option value="$PROJECT_DIR$/src/templates/timesheet/signals.py" />
-        <option value="$PROJECT_DIR$/src/templates/timesheet/options.html" />
         <option value="$PROJECT_DIR$/src/timesheet/__init__.py" />
         <option value="$PROJECT_DIR$/src/timesheet/apps.py" />
-        <option value="$PROJECT_DIR$/src/timesheet/views.py" />
         <option value="$PROJECT_DIR$/src/timesheet/models.py" />
         <option value="$PROJECT_DIR$/src/timesheet/signals.py" />
+        <option value="$PROJECT_DIR$/src/templates/base.html" />
+        <option value="$PROJECT_DIR$/src/templates/timesheet/monthview.html" />
+        <option value="$PROJECT_DIR$/src/templates/timesheet/summary_month.html" />
+        <option value="$PROJECT_DIR$/src/timesheet/urls.py" />
+        <option value="$PROJECT_DIR$/src/templates/timesheet/options.html" />
+        <option value="$PROJECT_DIR$/src/timesheet/views.py" />
+        <option value="$PROJECT_DIR$/src/templates/timesheet/summary.html" />
       </list>
     </option>
   </component>
@@ -441,24 +230,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="timesheet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MITS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MITS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -482,6 +253,68 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="timesheet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MITS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MITS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MITS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MITS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MITS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MITS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,28 +543,36 @@
       <option name="number" value="Default" />
       <updated>1449051185403</updated>
     </task>
+    <task id="LOCAL-00001" summary="Major changes. Almost complete">
+      <created>1453769054125</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1453769054125</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1251" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19984013" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23581135" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -747,6 +588,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Major changes. Almost complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Major changes. Almost complete" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="5" />
@@ -754,16 +599,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/timesheet/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/timesheet/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -786,9 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,9 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -831,9 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,9 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,7 +687,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -907,9 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/blocks/tablesnippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12618296">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/timesheet/tests/test_forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9076923">
@@ -1033,36 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary_activities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary_employees.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary_departments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary_month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/js/ajax_csrf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44615385">
@@ -1077,73 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="33" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/timesheet/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/timesheet/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/monthview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3438485">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/options.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.25">
-          <caret line="189" column="62" selection-start-line="189" selection-start-column="62" selection-end-line="189" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/timesheet/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="326" column="82" selection-start-line="326" selection-start-column="82" selection-end-line="326" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/timesheet/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1692307">
-          <caret line="141" column="57" selection-start-line="141" selection-start-column="57" selection-end-line="141" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,9 +873,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13846155">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timesheet/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1161,16 +887,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timesheet/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/blocks/tablesnippet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12618296">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timesheet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="141" column="57" selection-start-line="141" selection-start-column="57" selection-end-line="141" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/monthview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.625">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/timesheet/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10769231">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.092307694">
+          <caret line="8" column="101" selection-start-line="8" selection-start-column="101" selection-end-line="8" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/options.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="45.375">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/timesheet/summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.5">
+          <caret line="82" column="73" selection-start-line="82" selection-start-column="73" selection-end-line="82" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/timesheet/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3384616">
+          <caret line="694" column="34" selection-start-line="694" selection-start-column="34" selection-end-line="694" selection-end-column="34" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
